@@ -1,0 +1,10 @@
+.container {
+  background-size: cover;
+  height: 100%;
+  background-image: url("../../assets/ItemTracker.png");
+}
+
+.tracker-row {
+  display: flex;
+  flex-direction: row;
+}
