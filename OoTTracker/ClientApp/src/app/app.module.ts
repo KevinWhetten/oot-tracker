@@ -14,6 +14,9 @@ import { ItemsComponent } from './tracker/items/items.component';
 import { OtherComponent } from './tracker/other/other.component';
 import { MedallionsComponent } from './tracker/medallions/medallions.component';
 import { EquipmentComponent } from './tracker/equipment/equipment.component';
+import { BossSelectionComponent } from './notes/boss-selection/boss-selection.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -27,14 +30,17 @@ import { EquipmentComponent } from './tracker/equipment/equipment.component';
     OtherComponent,
     MedallionsComponent,
     EquipmentComponent,
+    BossSelectionComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-    ])
+      {path: '', component: HomeComponent, pathMatch: 'full'},
+    ]),
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
