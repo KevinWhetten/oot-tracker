@@ -1,4 +1,4 @@
-<mat-select name="boss" class="path-hint-dropdown {{color}}" [(ngModel)]="color">
-  <mat-option [value]="''">--- Select One ---</mat-option>
-  <mat-option *ngFor="let boss of bosses" [value]="boss.color" class="{{boss.color}}">{{boss.name}}</mat-option>
-</mat-select>
+<select name="boss" class="path-hint-dropdown {{color}}" [(ngModel)]="color">
+  <option [value]="'gray'" class="gray">--- Select One ---</option>
+  <option *ngFor="let boss of bosses" [value]="boss.color" class="{{boss.color}}">{{boss.name}}</option>
+</select>

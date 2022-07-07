@@ -1,0 +1,4 @@
+﻿<select class="path-hint-dropdown {{color}}" [(ngModel)]="color">
+  <option [value]="'gray'" class="gray">--- Select One ---</option>
+  <option *ngFor="let option of options" [value]="'black'" class="black">{{option}}</option>
+</select>

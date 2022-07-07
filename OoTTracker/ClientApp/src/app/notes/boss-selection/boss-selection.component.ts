@@ -20,7 +20,7 @@ export class BossSelectionComponent implements OnInit {
     {name: 'Bongo Bongo', color: 'purple'},
     {name: 'Twinrova', color: 'orange'}] as boss[];
 
-  color: string = '';
+  color: string = 'gray';
 
   constructor() {
   }

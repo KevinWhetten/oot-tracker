@@ -1,6 +1,6 @@
 .items {
   width: 100%;
-  padding: 4rem 0 0 7rem;
+  padding: 1rem 0 0 1.8rem;
 }
 
 .medallion-row {
@@ -11,13 +11,13 @@
 .medallion-column {
   display: flex;
   flex-direction: column;
-  margin: .5rem 0 0 0;
+  margin: .2rem 0 0 0;
 }
 
 .medallion-column1 {
   display: flex;
   flex-direction: column;
-  margin: 5.5rem 0 0 0;
+  margin: 1.75rem 0 0 0;
 }
 
 .medallion-column2 {
@@ -26,11 +26,11 @@
 }
 
 .blank {
-  height: 11rem;
+  height: 3.5rem;
 }
 
 img {
-  width: 6rem;
-  margin-right: 2.5rem;
-  margin-bottom: 3.5rem;
+  width: 2rem;
+  margin-right: .6rem;
+  margin-bottom: 1rem;
 }

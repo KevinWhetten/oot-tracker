@@ -1,6 +1,10 @@
-﻿.container {
-  height: 100%;
-  //display: grid;
-  //grid-template-columns: 33% 67%;
-  //grid-template-rows: 67% 33%;
+﻿.home-container {
+  display: flex;
+  margin: 0;
+}
+
+app-tracker {
+  width: 25rem;
+  height: 29rem;
+  margin-left: -2px;
 }

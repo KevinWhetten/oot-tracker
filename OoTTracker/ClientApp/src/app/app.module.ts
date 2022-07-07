@@ -17,6 +17,8 @@ import { EquipmentComponent } from './tracker/equipment/equipment.component';
 import { BossSelectionComponent } from './notes/boss-selection/boss-selection.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from "@angular/material/select";
+import { LocationSelectionComponent } from './notes/location-selection/location-selection.component';
+import { ItemSelectionComponent } from './notes/item-selection/item-selection.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import {MatSelectModule} from "@angular/material/select";
     MedallionsComponent,
     EquipmentComponent,
     BossSelectionComponent,
+    LocationSelectionComponent,
+    ItemSelectionComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
