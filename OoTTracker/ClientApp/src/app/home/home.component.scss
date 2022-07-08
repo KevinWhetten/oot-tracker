@@ -1,5 +1,6 @@
 ﻿.home-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
   margin: 0;
 }
 
@@ -7,4 +8,9 @@ app-tracker {
   width: 25rem;
   height: 29rem;
   margin-left: -2px;
+}
+
+app-notes {
+
+  width: 25rem;
 }
