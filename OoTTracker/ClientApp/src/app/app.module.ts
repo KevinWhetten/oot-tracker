@@ -19,6 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSelectModule} from "@angular/material/select";
 import { LocationSelectionComponent } from './notes/location-selection/location-selection.component';
 import { ItemSelectionComponent } from './notes/item-selection/item-selection.component';
+import { ListComponent } from './checklist/list/list.component';
+import { ForestChecklistComponent } from './checklist/forest-checklist/forest-checklist.component';
+import { MountainChecklistComponent } from './checklist/mountain-checklist/mountain-checklist.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { ItemSelectionComponent } from './notes/item-selection/item-selection.co
     BossSelectionComponent,
     LocationSelectionComponent,
     ItemSelectionComponent,
+    ListComponent,
+    ForestChecklistComponent,
+    MountainChecklistComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
