@@ -30,6 +30,11 @@ export class MountainChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Above DC Boulder',
+      type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
       name: 'Storms Grotto',
       type: CheckType.Chest,
       requirements: ['']
@@ -50,67 +55,62 @@ export class MountainChecklistComponent implements OnInit {
       requirements: ['']
     },
   ] as Check[];
-  lostWoodsChecks = [
+  goronCityChecks = [
     {
-      name: 'Bridge Scrub',
-      type: CheckType.Scrub,
-      requirements: ['']
-    },
-    {
-      name: ' Bridge Bean Patch',
+      name: 'Center Platform',
       type: CheckType.Skulltula,
       requirements: ['']
     },
     {
-      name: 'Skullkid',
-      type: CheckType.NPC,
-      requirements: ['']
-    },
-    {
-      name: 'Goron Grotto',
+      name: 'Maze - Center (x2)',
       type: CheckType.Chest,
       requirements: ['']
     },
     {
-      name: 'Target',
-      type: CheckType.NPC,
+      name: 'Maze - Gossip Stone',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
     {
-      name: 'Ocarina Game',
-      type: CheckType.Game,
-      requirements: ['']
-    },
-    {
-      name: 'Skull Mask',
-      type: CheckType.NPC,
-      requirements: ['']
-    },
-    {
-      name: 'Theater Bean Patch',
+      name: 'Maze - Crate',
       type: CheckType.Skulltula,
       requirements: ['']
     },
     {
-      name: 'Theater Bean Ride',
-      type: CheckType.Skulltula,
+      name: 'Maze - Left',
+      type: CheckType.Chest,
       requirements: ['']
     },
     {
-      name: 'Grotto Scrub',
-      type: CheckType.Scrub,
+      name: 'Link the Goron',
+      type: CheckType.NPC,
+      requirements: ['']
+    },
+    {
+      name: 'Hotrod Goron',
+      type: CheckType.NPC,
+      requirements: ['']
+    },
+    {
+      name: 'Darunia',
+      type: CheckType.NPC,
+      requirements: ['']
+    },
+    {
+      name: 'Goron Pot',
+      type: CheckType.HeartPiece,
       requirements: ['']
     },
   ] as Check[];
-  sacredForestMeadowChecks = [
+  craterChecks = [
     {
-      name: 'Wolfos Grotto',
-      type: CheckType.Chest,
+      name: 'Bean Patch',
+      type: CheckType.Skulltula,
       requirements: ['']
     },
     {
-      name: 'Saria',
-      type: CheckType.Song,
+      name: 'Top of Volcano',
+      type: CheckType.HeartPiece,
       requirements: ['']
     },
     {
@@ -119,26 +119,32 @@ export class MountainChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
-      name: 'Meadow Gossip Stone',
-      type: CheckType.GossipStone,
+      name: 'Great Fairy',
+      type: CheckType.NPC,
       requirements: ['']
     },
     {
-      name: 'Maze Wall',
+      name: 'Wall Alcove',
+      type: CheckType.HeartPiece,
+      requirements: ['']
+    },
+    {
+      name: 'Grotto',
       type: CheckType.Skulltula,
       requirements: ['']
     },
     {
-      name: 'Maze Gossip Stone 1',
+      name: 'Gossip Stone',
       type: CheckType.GossipStone,
       requirements: ['']
     },
     {
-      name: 'Maze Gossip Stone 2',
-      type: CheckType.GossipStone,
+      name: 'Crate',
+      type: CheckType.Skulltula,
       requirements: ['']
     },
   ] as Check[];
+  dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
 
   constructor() { }
 

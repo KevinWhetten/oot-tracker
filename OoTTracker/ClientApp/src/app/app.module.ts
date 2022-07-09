@@ -22,6 +22,12 @@ import { ItemSelectionComponent } from './notes/item-selection/item-selection.co
 import { ListComponent } from './checklist/list/list.component';
 import { ForestChecklistComponent } from './checklist/forest-checklist/forest-checklist.component';
 import { MountainChecklistComponent } from './checklist/mountain-checklist/mountain-checklist.component';
+import { RiverChecklistComponent } from './checklist/river-checklist/river-checklist.component';
+import { CastleChecklistComponent } from './checklist/castle-checklist/castle-checklist.component';
+import { KakarikoChecklistComponent } from './checklist/kakariko-checklist/kakariko-checklist.component';
+import { DesertChecklistComponent } from './checklist/desert-checklist/desert-checklist.component';
+import { HyruleFieldChecklistComponent } from './checklist/hyrule-field-checklist/hyrule-field-checklist.component';
+import { CheckComponent } from './checklist/list/check/check.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +47,12 @@ import { MountainChecklistComponent } from './checklist/mountain-checklist/mount
     ListComponent,
     ForestChecklistComponent,
     MountainChecklistComponent,
+    RiverChecklistComponent,
+    CastleChecklistComponent,
+    KakarikoChecklistComponent,
+    DesertChecklistComponent,
+    HyruleFieldChecklistComponent,
+    CheckComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

@@ -1,13 +1,13 @@
 ﻿.home-container {
-  display: grid;
-  grid-template-columns: 25rem 103rem;
+  display: flex;
+  flex-direction: row;
   margin: 0;
 }
 
 app-tracker {
+  margin: 0;
   width: 25rem;
   height: 29rem;
-  margin-left: -2px;
 }
 
 app-notes {

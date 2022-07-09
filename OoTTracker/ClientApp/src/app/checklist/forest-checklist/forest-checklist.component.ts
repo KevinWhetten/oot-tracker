@@ -129,6 +129,7 @@ export class ForestChecklistComponent implements OnInit {
       requirements: ['']
     },
   ] as Check[];
+  dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
 
   constructor() {
   }
