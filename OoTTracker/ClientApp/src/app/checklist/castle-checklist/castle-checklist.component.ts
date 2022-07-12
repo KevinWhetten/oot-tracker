@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CheckType} from "../../../models/check-type";
 import {Check} from "../../../models/check";
+import {TimeOfDay} from "../../../models/timeOfDay";
+import {Era} from "../../../models/era";
+import { Item } from 'src/models/item';
 
 @Component({
   selector: 'app-castle-checklist',
@@ -12,109 +15,149 @@ export class CastleChecklistComponent implements OnInit {
     {
       name: 'Guard House',
       type: CheckType.Skulltula,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Poe Collector',
       type: CheckType.NPC,
-      requirements: ['']
+      era: Era.Adult,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.Bottle]]
     },
     {
       name: 'Bombchu Bowling (x2)',
       type: CheckType.Game,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.Day,
+      requirements: [[Item.Bombs]]
     },
     {
       name: 'Shooting Gallery',
       type: CheckType.Game,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.Day,
+      requirements: {}
     },
     {
       name: 'Treasure Chest Game',
       type: CheckType.Game,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.Night,
+      requirements: [[Item.LensOfTruth]]
     },
     {
       name: 'Richard',
       type: CheckType.NPC,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.Night,
+      requirements: {}
     },
   ] as Check[];
   templeChecks = [
     {
       name: 'Gossip Stone 1',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.NoRequirement,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Gossip Stone 2',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.NoRequirement,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Gossip Stone 3',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.NoRequirement,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Gossip Stone 4',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.NoRequirement,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Sheik',
       type: CheckType.Song,
-      requirements: ['']
+      era: Era.Adult,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.ForestMedallion]]
     },
     {
       name: 'Zelda',
       type: CheckType.NPC,
-      requirements: ['']
+      era: Era.Adult,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.ShadowMedallion],[Item.SpiritMedallion]]
     },
   ] as Check[];
   groundsChecks = [
     {
       name: 'Tree',
       type: CheckType.Skulltula,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Gossip Stone 1',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Great Fairy',
       type: CheckType.NPC,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.Bombs],[Item.ZeldasLullaby]]
     },
     {
       name: 'Gossip Stone 2',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: {}
     },
     {
       name: 'Storms Grotto',
       type: CheckType.Skulltula,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.SongOfStorms]]
     },
     {
       name: 'Storms Grotto',
       type: CheckType.GossipStone,
-      requirements: ['']
+      era: Era.Child,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.SongOfStorms]]
     },
   ] as Check[];
   ganonChecks = [
     {
       name: 'Stone Archway',
       type: CheckType.Skulltula,
-      requirements: ['']
+      era: Era.Adult,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.Hookshot,Item.Longshot]]
     },
     {
       name: 'Great Fairy',
       type: CheckType.NPC,
-      requirements: ['']
-    },
+      era: Era.Adult,
+      time: TimeOfDay.NoRequirement,
+      requirements: [[Item.GoldGauntlets],[Item.ZeldasLullaby]]
+    }
   ] as Check[];
 
   constructor() {
