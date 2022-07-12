@@ -147,7 +147,7 @@ export class MountainChecklistComponent implements OnInit {
     },
     {
       name: 'Grotto',
-      type: CheckType.Skulltula,
+      type: CheckType.Chest,
       requirements: ['']
     },
     {

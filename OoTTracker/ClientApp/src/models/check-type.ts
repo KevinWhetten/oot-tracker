@@ -7,4 +7,5 @@ export enum CheckType {
   Game = 'assets/icons/game.png',
   Song = 'assets/icons/song.png',
   HeartPiece = 'assets/icons/heart.png',
+  Key = 'assets/icons/key.png',
 }

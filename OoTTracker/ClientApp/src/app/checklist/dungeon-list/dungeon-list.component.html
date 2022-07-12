@@ -1,0 +1,11 @@
+<div class="list">
+  <h2 class="header {{color}}" [class.rounded]="list.length == 0" [innerHTML]="name"></h2>
+  <div *ngFor="let check of list">
+    <div *ngIf="!check.checked" class="check chest">
+      <app-check [check]="check"></app-check>
+    </div>
+  </div>
+  <app-check-counter [num]="dungeonChecks" [type]="chest" [name]="'Chests'"></app-check-counter>
+  <app-check-counter *ngIf="keyChecks > 0" [num]="keyChecks" [type]="key" [name]="'Key Chests'"></app-check-counter>
+  <app-check-counter *ngIf="skullChecks > 0" [num]="skullChecks" [type]="skulltula" [name]="'Skulltulas'"></app-check-counter>
+</div>

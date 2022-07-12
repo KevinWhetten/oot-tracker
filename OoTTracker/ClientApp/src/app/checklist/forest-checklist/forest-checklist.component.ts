@@ -10,7 +10,7 @@ import {CheckType} from "../../../models/check-type";
 export class ForestChecklistComponent implements OnInit {
   kokiriChecks = [
     {
-      name: 'Mido\'s House',
+      name: 'Mido\'s House (x4)',
       type: CheckType.Chest,
       requirements: ['']
     },
@@ -22,6 +22,11 @@ export class ForestChecklistComponent implements OnInit {
     {
       name: 'Kokiri Sword',
       type: CheckType.Chest,
+      requirements: ['']
+    },
+    {
+      name: 'House of Twins',
+      type: CheckType.Skulltula,
       requirements: ['']
     },
     {
@@ -74,11 +79,6 @@ export class ForestChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
-      name: 'Goron Grotto',
-      type: CheckType.Chest,
-      requirements: ['']
-    },
-    {
       name: 'Target',
       type: CheckType.NPC,
       requirements: ['']
@@ -86,6 +86,11 @@ export class ForestChecklistComponent implements OnInit {
     {
       name: 'Ocarina Game',
       type: CheckType.Game,
+      requirements: ['']
+    },
+    {
+      name: 'Goron Grotto',
+      type: CheckType.Chest,
       requirements: ['']
     },
     {

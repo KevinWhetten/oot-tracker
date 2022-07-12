@@ -28,6 +28,9 @@ import { KakarikoChecklistComponent } from './checklist/kakariko-checklist/kakar
 import { DesertChecklistComponent } from './checklist/desert-checklist/desert-checklist.component';
 import { HyruleFieldChecklistComponent } from './checklist/hyrule-field-checklist/hyrule-field-checklist.component';
 import { CheckComponent } from './checklist/list/check/check.component';
+import { DungeonListComponent } from './checklist/dungeon-list/dungeon-list.component';
+import { CheckCounterComponent } from './checklist/dungeon-list/check-counter/check-counter.component';
+import { TrialsListComponent } from './checklist/dungeon-list/trials-list/trials-list.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { CheckComponent } from './checklist/list/check/check.component';
     DesertChecklistComponent,
     HyruleFieldChecklistComponent,
     CheckComponent,
+    DungeonListComponent,
+    CheckCounterComponent,
+    TrialsListComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),
