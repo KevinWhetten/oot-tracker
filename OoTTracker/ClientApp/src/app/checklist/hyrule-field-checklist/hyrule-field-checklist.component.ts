@@ -67,6 +67,11 @@ export class HyruleFieldChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Near Gerudo Grotto',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Grotto Scrub',
       type: CheckType.Scrub,
       requirements: ['']
@@ -89,7 +94,7 @@ export class HyruleFieldChecklistComponent implements OnInit {
   ] as Check[];
   lakeChecks = [
     {
-      name: 'Gossip Stone',
+      name: 'Gerudo Gossip Stone',
       type: CheckType.GossipStone,
       requirements: ['']
     },
@@ -119,6 +124,11 @@ export class HyruleFieldChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Southwest Gossip Stone',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Tall Tree',
       type: CheckType.Skulltula,
       requirements: ['']
@@ -131,6 +141,11 @@ export class HyruleFieldChecklistComponent implements OnInit {
     {
       name: 'Sun Island',
       type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
+      name: 'Southeast Gossip Stone',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
     {

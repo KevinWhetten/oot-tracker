@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CheckType} from "../../../models/check-type";
 import {Check} from "../../../models/check";
 
@@ -22,6 +22,11 @@ export class DesertChecklistComponent implements OnInit {
     {
       name: 'Bean Patch',
       type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
+      name: 'Near Waterfall',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
     {
@@ -96,6 +101,11 @@ export class DesertChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'South of Spirit Temple',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Plateau',
       type: CheckType.Skulltula,
       requirements: ['']
@@ -118,7 +128,8 @@ export class DesertChecklistComponent implements OnInit {
   ] as Check[];
   dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

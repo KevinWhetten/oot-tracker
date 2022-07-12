@@ -20,6 +20,11 @@ export class RiverChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Lower River',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Frogs in the Rain',
       type: CheckType.NPC,
       requirements: ['']
@@ -52,6 +57,11 @@ export class RiverChecklistComponent implements OnInit {
     {
       name: 'Upper River Ladder',
       type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
+      name: 'Below Waterfall',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
   ] as Check[];
@@ -89,6 +99,16 @@ export class RiverChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Outside Fairy Fountain',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
+      name: 'Hideout',
+      type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
       name: 'Wall Near Branch',
       type: CheckType.Skulltula,
       requirements: ['']
@@ -109,8 +129,8 @@ export class RiverChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
-      name: 'Hideout',
-      type: CheckType.Skulltula,
+      name: 'Near Ice Cavern',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
   ] as Check[];

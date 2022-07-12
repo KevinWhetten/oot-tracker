@@ -45,6 +45,11 @@ export class MountainChecklistComponent implements OnInit {
       requirements: ['']
     },
     {
+      name: 'Climb to Summit',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Great Fairy',
       type: CheckType.NPC,
       requirements: ['']
@@ -52,6 +57,13 @@ export class MountainChecklistComponent implements OnInit {
     {
       name: 'Biggoron',
       type: CheckType.NPC,
+      requirements: ['']
+    },
+  ] as Check[];
+  dodongoChecks = [
+    {
+      name: 'Gossip Stone',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
   ] as Check[];
@@ -89,6 +101,11 @@ export class MountainChecklistComponent implements OnInit {
     {
       name: 'Hotrod Goron',
       type: CheckType.NPC,
+      requirements: ['']
+    },
+    {
+      name: 'Medigoron Gossip Stone',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
     {

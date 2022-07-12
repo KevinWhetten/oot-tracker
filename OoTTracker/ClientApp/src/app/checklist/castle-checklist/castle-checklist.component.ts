@@ -42,6 +42,26 @@ export class CastleChecklistComponent implements OnInit {
   ] as Check[];
   templeChecks = [
     {
+      name: 'Gossip Stone 1',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
+      name: 'Gossip Stone 2',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
+      name: 'Gossip Stone 3',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
+      name: 'Gossip Stone 4',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
       name: 'Sheik',
       type: CheckType.Song,
       requirements: ['']
@@ -76,6 +96,11 @@ export class CastleChecklistComponent implements OnInit {
     {
       name: 'Storms Grotto',
       type: CheckType.Skulltula,
+      requirements: ['']
+    },
+    {
+      name: 'Storms Grotto',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
   ] as Check[];

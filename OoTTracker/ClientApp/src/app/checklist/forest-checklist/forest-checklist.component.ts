@@ -40,10 +40,27 @@ export class ForestChecklistComponent implements OnInit {
       requirements: ['']
     },
   ] as Check[];
+  dekuTreeChecks = [
+    {
+      name: 'Gossip Stone 1',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+    {
+      name: 'Gossip Stone 2',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
+  ] as Check[];
   lostWoodsChecks = [
     {
       name: 'Bridge Scrub',
       type: CheckType.Scrub,
+      requirements: ['']
+    },
+    {
+      name: 'Bridge Gossip Stone',
+      type: CheckType.GossipStone,
       requirements: ['']
     },
     {

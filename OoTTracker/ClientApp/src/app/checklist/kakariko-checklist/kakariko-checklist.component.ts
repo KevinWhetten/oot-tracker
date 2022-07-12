@@ -161,6 +161,11 @@ export class KakarikoChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       requirements: ['']
     },
+    {
+      name: 'Gossip Stone',
+      type: CheckType.GossipStone,
+      requirements: ['']
+    },
   ] as Check[];
   dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
 
