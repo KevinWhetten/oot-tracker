@@ -1,4 +1,4 @@
-﻿<div *ngIf="inEraFilter() && inTimeFilter()" class="check" [class.checked]="this.checked" (click)="toggleCheck()">
+﻿<div *ngIf="inFilter()" class="check" [class.checked]="this.checked" (click)="toggleCheck()">
     <img src="{{check.type}}"/>
     {{check.name}}
 </div>
