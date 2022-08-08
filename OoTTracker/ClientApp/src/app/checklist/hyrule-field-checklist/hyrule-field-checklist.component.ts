@@ -75,7 +75,7 @@ export class HyruleFieldChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot, Item.Longshot]],
+      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot]],
       checked: false
     },
     {
@@ -99,7 +99,7 @@ export class HyruleFieldChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot, Item.Longshot], [Item.FireArrows, Item.DinsFire]],
+      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot], [Item.FireArrows, Item.DinsFire]],
       checked: false
     },
     {
@@ -107,7 +107,7 @@ export class HyruleFieldChecklistComponent implements OnInit {
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot, Item.Longshot], [Item.FireArrows, Item.DinsFire]],
+      requirements: [[Item.Bombs, Item.MegatonHammer], [Item.Boomerang, Item.Hookshot], [Item.FireArrows, Item.DinsFire]],
       checked: false
     },
     {
@@ -157,7 +157,7 @@ export class HyruleFieldChecklistComponent implements OnInit {
       type: CheckType.NPC,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.GoldScale, Item.IronBoots], [Item.GoldScale, Item.Hookshot, Item.Longshot]],
+      requirements: [[Item.GoldScale, Item.IronBoots], [Item.GoldScale, Item.Hookshot]],
       checked: false
     },
     {

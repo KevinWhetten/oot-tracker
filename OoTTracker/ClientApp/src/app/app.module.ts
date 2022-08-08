@@ -31,6 +31,7 @@ import { CheckComponent } from './checklist/list/check/check.component';
 import { DungeonListComponent } from './checklist/dungeon-list/dungeon-list.component';
 import { CheckCounterComponent } from './checklist/dungeon-list/check-counter/check-counter.component';
 import { TrialsListComponent } from './checklist/dungeon-list/trials-list/trials-list.component';
+import { ChecklistFilterComponent } from './checklist/checklist-filter/checklist-filter.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { TrialsListComponent } from './checklist/dungeon-list/trials-list/trials
     DungeonListComponent,
     CheckCounterComponent,
     TrialsListComponent,
+    ChecklistFilterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

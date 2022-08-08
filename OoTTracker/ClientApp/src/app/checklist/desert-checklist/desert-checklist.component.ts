@@ -82,7 +82,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Chest,
       era: Era.Adult,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.HoverBoots, Item.Hookshot, Item.Longshot],[Item.HoverBoots, Item.Longshot, Item.ScarecrowSong]]
+      requirements: [[Item.HoverBoots, Item.Longshot],[Item.HoverBoots, Item.Longshot, Item.ScarecrowSong]]
     },
     {
       name: 'Horseback Archery 1000',
@@ -103,7 +103,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.Night,
-      requirements: [[Item.Hookshot, Item.Longshot]]
+      requirements: [[Item.Longshot]]
     },
   ] as Check[];
   wastelandChecks = [
@@ -112,14 +112,14 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.Hookshot, Item.Boomerang]]
+      requirements: [[Item.Hookshot, Item.Boomerang], [Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots]]
     },
     {
       name: 'Structure Torches',
       type: CheckType.Chest,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.FireArrows, Item.DinsFire]]
+      requirements: [[Item.FireArrows, Item.DinsFire], [Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots]]
     },
   ] as Check[];
   colossusChecks = [
@@ -128,7 +128,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Song,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots]],
       checked: false
     },
     {
@@ -136,7 +136,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Child,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bottle]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bottle]],
       checked: false
     },
     {
@@ -144,7 +144,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], Item.HoverBoots],
       checked: false
     },
     {
@@ -152,7 +152,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.Night,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bottle]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.MagicBeans, Item.Longshot]],
       checked: false
     },
     {
@@ -160,7 +160,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.HeartPiece,
       era: Era.Adult,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bottle]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.MagicBeans]],
       checked: false
     },
     {
@@ -168,7 +168,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.NPC,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bombs]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Bombs]],
       checked: false
     },
     {
@@ -176,7 +176,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.Night,
-      requirements: [[Item.RequiemOfSpirit, Item.LensOfTruth],[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Hookshot, Item.Longshot]],
+      requirements: [[Item.RequiemOfSpirit, Item.Longshot, Item.HoverBoots], [Item.Hookshot, Item.Longshot]],
       checked: false
     },
   ] as Check[];

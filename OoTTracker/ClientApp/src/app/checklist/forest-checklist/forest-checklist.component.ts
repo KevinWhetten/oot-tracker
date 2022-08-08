@@ -38,7 +38,7 @@ export class ForestChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.Night,
-      requirements: [[Item.Hookshot, Item.Longshot]]
+      requirements: [[Item.Hookshot]]
     },
     {
       name: 'Bean Patch',
@@ -208,7 +208,7 @@ export class ForestChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.Night,
-      requirements: [[Item.Hookshot, Item.Longshot]],
+      requirements: [[Item.Hookshot]],
       checked: false
     },
     {

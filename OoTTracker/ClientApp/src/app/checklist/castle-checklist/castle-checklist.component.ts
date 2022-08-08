@@ -149,7 +149,7 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Adult,
       time: TimeOfDay.NoRequirement,
-      requirements: [[Item.Hookshot,Item.Longshot]]
+      requirements: [[Item.Hookshot]]
     },
     {
       name: 'Great Fairy',
