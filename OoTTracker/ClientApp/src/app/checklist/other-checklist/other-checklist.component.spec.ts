@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HyruleFieldChecklistComponent } from './hyrule-field-checklist.component';
+import { OtherChecklistComponent } from './other-checklist.component';
 
 describe('RanchChecklistComponent', () => {
-  let component: HyruleFieldChecklistComponent;
-  let fixture: ComponentFixture<HyruleFieldChecklistComponent>;
+  let component: OtherChecklistComponent;
+  let fixture: ComponentFixture<OtherChecklistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HyruleFieldChecklistComponent ]
+      declarations: [ OtherChecklistComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HyruleFieldChecklistComponent);
+    fixture = TestBed.createComponent(OtherChecklistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

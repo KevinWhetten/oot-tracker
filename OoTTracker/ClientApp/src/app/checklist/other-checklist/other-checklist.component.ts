@@ -7,10 +7,10 @@ import {Item} from "../../../models/item";
 
 @Component({
   selector: 'app-ranch-checklist',
-  templateUrl: './hyrule-field-checklist.component.html',
-  styleUrls: ['./hyrule-field-checklist.component.scss']
+  templateUrl: './other-checklist.component.html',
+  styleUrls: ['./other-checklist.component.scss']
 })
-export class HyruleFieldChecklistComponent implements OnInit {
+export class OtherChecklistComponent implements OnInit {
   ranchChecks = [
     {
       name: 'Talon\'s Chickens',
@@ -266,6 +266,8 @@ export class HyruleFieldChecklistComponent implements OnInit {
     },
   ] as Check[];
   dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
+
+  child: Era = Era.Child;
   adult: Era = Era.Adult;
 
   constructor() { }

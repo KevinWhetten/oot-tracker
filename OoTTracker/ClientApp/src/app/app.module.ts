@@ -26,7 +26,7 @@ import { RiverChecklistComponent } from './checklist/river-checklist/river-check
 import { CastleChecklistComponent } from './checklist/castle-checklist/castle-checklist.component';
 import { KakarikoChecklistComponent } from './checklist/kakariko-checklist/kakariko-checklist.component';
 import { DesertChecklistComponent } from './checklist/desert-checklist/desert-checklist.component';
-import { HyruleFieldChecklistComponent } from './checklist/hyrule-field-checklist/hyrule-field-checklist.component';
+import { OtherChecklistComponent } from './checklist/other-checklist/other-checklist.component';
 import { CheckComponent } from './checklist/list/check/check.component';
 import { DungeonListComponent } from './checklist/dungeon-list/dungeon-list.component';
 import { CheckCounterComponent } from './checklist/dungeon-list/check-counter/check-counter.component';
@@ -55,7 +55,7 @@ import { ChecklistFilterComponent } from './checklist/checklist-filter/checklist
     CastleChecklistComponent,
     KakarikoChecklistComponent,
     DesertChecklistComponent,
-    HyruleFieldChecklistComponent,
+    OtherChecklistComponent,
     CheckComponent,
     DungeonListComponent,
     CheckCounterComponent,
