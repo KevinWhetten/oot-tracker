@@ -3,7 +3,7 @@ import {CheckType} from "../../../models/check-type";
 import {Check} from "../../../models/check";
 import {TimeOfDay} from "../../../models/timeOfDay";
 import {Era} from "../../../models/era";
-import { Item } from 'src/models/item';
+import {Item} from 'src/models/item';
 
 @Component({
   selector: 'app-castle-checklist',
@@ -159,6 +159,8 @@ export class CastleChecklistComponent implements OnInit {
       requirements: [[Item.GoldGauntlets],[Item.ZeldasLullaby]]
     }
   ] as Check[];
+  child: Era = Era.Child;
+  adult: Era = Era.Adult;
 
   constructor() {
   }
