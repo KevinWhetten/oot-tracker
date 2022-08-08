@@ -1,0 +1,6 @@
+<select name="boss" class="sometimes-hint-dropdown {{color}}" [(ngModel)]="color">
+  <option [value]="'gray'" class="gray">--- Select One ---</option>
+  <optgroup *ngFor="let location of sometimesLocations" label="{{location.name}}" class="black">
+    <option *ngFor="let region of location.regions" [value]="region.color" class="{{region.color}}">{{region.name}}</option>
+  </optgroup>
+</select>
