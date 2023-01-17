@@ -92,6 +92,67 @@ export class HintService {
       ]
     }
   ];
+  itemLocations = [
+    {
+      name: 'Songs',
+      regions: [
+        {name: 'Ocarina of Time', color: 'yellow'},
+        {name: 'Composer Brothers', color: 'purple'},
+        {name: 'In a Meadow', color: 'green'},
+        {name: 'Monument to Time', color: 'gray'},
+        {name: 'Crater\'s Melody', color: 'red'},
+        {name: 'Frozen Cavern', color: 'light-blue'},
+        {name: 'Ravaged Village', color: 'purple'},
+        {name: 'Beyond the Wasteland', color: 'orange'}
+      ],
+    },
+    {
+      name: 'Overworld',
+      regions: [
+        {name: 'Skull Kid', color: 'green'},
+        {name: 'Target in the Woods', color: 'green'},
+        {name: 'Darunia\'s Dance', color: 'red'},
+        {name: 'Goron City Hammer - Maze Left', color: 'red'},
+        {name: 'Goron Pottery', color: 'red'},
+        {name: 'Frogs in a Storm', color: 'blue'},
+        {name: 'Unfreezing King Zora', color: 'light-blue'},
+        {name: 'Under the Icy Waters', color: 'light-blue'},
+        {name: 'Treasure Chest Game', color: 'gray'},
+        {name: 'Fairy outside Hyrule Castle', color: 'gray'},
+        {name: 'Fairy outside Ganon\'s Castle', color: 'gray'},
+        {name: '20 Skulltulas', color: 'purple'},
+        {name: '30 Skulltulas', color: 'purple'},
+        {name: '40 Skulltulas', color: 'purple'},
+        {name: '50 Skulltulas', color: 'purple'},
+        {name: 'Collecting Cuccos', color: 'purple'},
+        {name: 'Sun\'s Song grave', color: 'purple'},
+        {name: 'Flames in the Royal Tomb', color: 'purple'},
+        {name: 'Horseback Archery - 1500', color: 'orange'},
+        {name: 'Gerudo Valley Hammer chest', color: 'orange'},
+        {name: 'Beneath the Sands, flames reveal', color: 'orange'},
+        {name: 'Diving Experiment', color: 'blue'},
+        {name: 'Shooting the Sun', color: 'blue'}
+      ]
+    },
+    {
+      name: 'Dungeons',
+      regions: [
+        {name: 'Jabu Jabu Boomerang Chest', color: 'blue'},
+        {name: 'Pierre atop the Fire Temple', color: 'red'},
+        {name: 'Flare Dancer atop the volcano', color: 'red'},
+        {name: 'River in the Water Temple', color: 'blue'},
+        {name: 'Central pillar of Water Temple', color: 'blue'},
+        {name: 'Rolling boulders in the Water Temple', color: 'blue'},
+        {name: 'Final treasure of Ice Cavern', color: 'light-blue'},
+        {name: 'Giant pot in the Shadow Temple', color: 'purple'},
+        {name: 'Thieves\' Underwater Training', color: 'orange'},
+        {name: 'The Thieves\' Training - Final', color: 'orange'},
+        {name: 'Sought by Nabooru', color: 'orange'},
+        {name: 'Colossus\'s Left Hand', color: 'orange'},
+        {name: 'Like-like in Ganon\'s Shadow Trial', color: 'gray'}
+      ]
+    }
+  ];
 
 
   constructor() {

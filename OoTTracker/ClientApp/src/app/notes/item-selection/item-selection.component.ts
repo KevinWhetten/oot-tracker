@@ -6,7 +6,7 @@
   styleUrls: ['./item-selection.component.scss']
 })
 export class ItemSelectionComponent implements OnInit {
-  options = ['Junk', 'Nice Item', 'Required Item'];
+  options = ['Junk Item', 'Nice Item', 'Required Item'];
   color = 'gray';
 
   constructor() {

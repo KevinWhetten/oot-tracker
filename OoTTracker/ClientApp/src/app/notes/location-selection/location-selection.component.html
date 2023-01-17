@@ -1,30 +1,6 @@
-﻿<select class="path-hint-dropdown {{locationColor}}" [(ngModel)]="locationColor">
+﻿<select name="location" class="location-dropdown {{color}}" [(ngModel)]="color">
   <option [value]="'gray'" class="gray">--- Select One ---</option>
-  <optgroup label="Locations" class="">
-    <option *ngFor="let location of locations" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Kokiri Forest" class="green">
-    <option *ngFor="let location of forest" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Kakariko Village" class="purple">
-    <option *ngFor="let location of kakarikoVillage" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Death Mountain" class="red">
-    <option *ngFor="let location of mountain" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Zora River" class="blue">
-    <option *ngFor="let location of river" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Gerudo Desert" class="orange">
-    <option *ngFor="let location of desert" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Hyrule Castle" class="black">
-    <option *ngFor="let location of castle" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Dungeons"  class="black">
-    <option *ngFor="let location of dungeons" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
-  </optgroup>
-  <optgroup label="Mini-Dungeons"  class="black">
-    <option *ngFor="let location of miniDungeons" [value]="location.color" class="{{location.color}}">{{location.name}}</option>
+  <optgroup *ngFor="let location of locations" label="{{location.name}}" class="black">
+    <option *ngFor="let region of location.regions" [value]="region.color" class="{{region.color}}">{{region.name}}</option>
   </optgroup>
 </select>

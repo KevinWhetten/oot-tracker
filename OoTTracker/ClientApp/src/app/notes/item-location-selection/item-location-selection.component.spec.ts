@@ -1,8 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+﻿import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LocationSelectionComponent } from './location-selection.component';
 
-describe('SometimesSelectionComponent', () => {
+describe('LocationSelectionComponent', () => {
   let component: LocationSelectionComponent;
   let fixture: ComponentFixture<LocationSelectionComponent>;
 

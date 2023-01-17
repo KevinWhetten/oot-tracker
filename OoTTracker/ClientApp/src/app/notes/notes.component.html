@@ -1,26 +1,12 @@
 <div class="hints path-hints">
-  <h2>Path Hints</h2>
-  <div class="path-hint">
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; path to &nbsp; </label>
-    <app-boss-selection></app-boss-selection>
+  <div class="hint-title">
+    <h2>Path Hints</h2>
+    <div>
+      <button (click)="addPathHint()">Add new Hint</button>
+      <button (click)="resetPathHints()">Reset</button>
+    </div>
   </div>
-  <div class="path-hint">
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; path to &nbsp; </label>
-    <app-boss-selection></app-boss-selection>
-  </div>
-  <div class="path-hint">
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; path to &nbsp; </label>
-    <app-boss-selection></app-boss-selection>
-  </div>
-  <div class="path-hint">
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; path to &nbsp; </label>
-    <app-boss-selection></app-boss-selection>
-  </div>
-  <div class="path-hint">
+  <div class="hint path-hint" *ngFor="let num of getPathHintIteration()">
     <app-location-selection></app-location-selection>
     <label>&nbsp; path to &nbsp; </label>
     <app-boss-selection></app-boss-selection>
@@ -28,18 +14,14 @@
 </div>
 
 <div class="hints barren-hints">
-  <h2>Barren Hints</h2>
-  <div class="barren-hint">
-    <label>Plundering &nbsp; </label>
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; is foolish.</label>
+  <div class="hint-title">
+    <h2>Barren Hints</h2>
+    <div>
+      <button (click)="addBarrenHint()">Add new Hint</button>
+      <button (click)="resetBarrenHints()">Reset</button>
+    </div>
   </div>
-  <div class="barren-hint">
-    <label>Plundering &nbsp; </label>
-    <app-location-selection></app-location-selection>
-    <label>&nbsp; is foolish.</label>
-  </div>
-  <div class="barren-hint">
+  <div class="hint barren-hint" *ngFor="let num of getBarrenHintIteration()">
     <label>Plundering &nbsp; </label>
     <app-location-selection></app-location-selection>
     <label>&nbsp; is foolish.</label>
@@ -47,37 +29,31 @@
 </div>
 
 <div class="hints always-hints">
-  <h2>Always Hints</h2>
-  <div class="big-poes-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; Big Poes</label>
+  <div class="hint-title">
+    <h2>Always Hints</h2>
+    <div>
+      <button (click)="addAlwaysHint()">Add new Hint</button>
+      <button (click)="resetAlwaysHints()">Reset</button>
+    </div>
   </div>
-  <div class="skull-mask-always-hint">
+  <div class="hint item-hint" *ngFor="let num of getAlwaysHintIteration()">
+    <app-item-location-selection></app-item-location-selection>
+    <label>&nbsp; is a &nbsp; </label>
     <app-item-selection></app-item-selection>
-    <label>&nbsp; Skull Mask</label>
-  </div>
-  <div class="ocarina-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; Ocarina of Time Song</label>
-  </div>
-  <div class="biggoron-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; Biggoron</label>
-  </div>
-  <div class="30-skulls-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; 30 Skulls</label>
-  </div>
-  <div class="40-skulls-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; 40 Skulls</label>
-  </div>
-  <div class="50-skulls-always-hint">
-    <app-item-selection></app-item-selection>
-    <label>&nbsp; 50 Skulls</label>
   </div>
 </div>
 
 <div class="hints sometimes-hints">
-  <h2>Sometimes Hints</h2>
+  <div class="hint-title">
+    <h2>Sometimes Hints</h2>
+    <div>
+      <button (click)="addSometimesHint()">Add new Hint</button>
+      <button (click)="resetSometimesHints()">Reset</button>
+    </div>
+  </div>
+  <div class="hint item-hint" *ngFor="let num of getSometimesHintIteration()">
+    <app-item-location-selection></app-item-location-selection>
+    <label>&nbsp; is a &nbsp; </label>
+    <app-item-selection></app-item-selection>
+  </div>
 </div>

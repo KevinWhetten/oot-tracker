@@ -1056,7 +1056,7 @@ export class CheckService {
     },
     {
       name: 'Redead Grave',
-      type: CheckType.Game,
+      type: CheckType.Chest,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
       requirements: [[Item.SunsSong]],
