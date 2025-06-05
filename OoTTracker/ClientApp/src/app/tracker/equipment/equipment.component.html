@@ -1,24 +1,24 @@
 <div class="items">
   <div class="item-column">
     <div class="item-row">
-      <img class="kokiri-sword" src="{{kokiriSword}}" alt="icon" (click)="toggleKokiriSword()"/>
-      <img class="master-sword" src="{{masterSword}}" alt="icon" (click)="toggleMasterSword()"/>
-      <img class="biggoron-sword" src="{{biggoronSword}}" alt="icon" (click)="toggleBiggoronSword()"/>
+      <app-item [source]="kokiriSword" [type]="equipment"></app-item>
+      <app-item [source]="masterSword" [type]="equipment"></app-item>
+      <app-item [source]="biggoronSword" [type]="equipment"></app-item>
     </div>
     <div class="item-row">
-      <img class="deku-shield" src="{{dekuShield}}" alt="icon" (click)="toggleDekuShield()"/>
-      <img class="hylian-shield" src="{{hylianShield}}" alt="icon" (click)="toggleHylianShield()"/>
-      <img class="mirror-shield" src="{{mirrorShield}}" alt="icon" (click)="toggleMirrorShield()"/>
+      <app-item [source]="dekuShield" [type]="equipment"></app-item>
+      <app-item [source]="hylianShield" [type]="equipment"></app-item>
+      <app-item [source]="mirrorShield" [type]="equipment"></app-item>
     </div>
     <div class="item-row">
-      <img class="kokiri-tunic" src="{{kokiriTunic}}" alt="icon"/>
-      <img class="goron-tunic" src="{{goronTunic}}" alt="icon" (click)="toggleGoronTunic()"/>
-      <img class="zora-tunic" src="{{zoraTunic}}" alt="icon" (click)="toggleZoraTunic()"/>
+      <app-item [source]="kokiriTunic" [type]="equipment"></app-item>
+      <app-item [source]="goronTunic" [type]="equipment"></app-item>
+      <app-item [source]="zoraTunic" [type]="equipment"></app-item>
     </div>
     <div class="item-row">
-      <img class="kokiri-boots" src="{{kokiriBoots}}" alt="icon"/>
-      <img class="iron-boots" src="{{ironBoots}}" alt="icon" (click)="toggleIronBoots()"/>
-      <img class="hover-boots" src="{{hoverBoots}}" alt="icon" (click)="toggleHoverBoots()"/>
+      <app-item [source]="kokiriBoots" [type]="equipment"></app-item>
+      <app-item [source]="ironBoots" [type]="equipment"></app-item>
+      <app-item [source]="hoverBoots" [type]="equipment"></app-item>
     </div>
   </div>
 </div>

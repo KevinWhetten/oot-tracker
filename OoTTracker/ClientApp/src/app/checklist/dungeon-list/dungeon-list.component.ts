@@ -14,20 +14,23 @@ export class DungeonListComponent implements OnInit, OnDestroy {
   @Input() name: string = '';
   @Input() list: Check[] = [];
   @Input() color = 'gray';
-  @Input() dungeonChecks = 0;
+  @Input() itemChecks = 0;
   @Input() keyChecks = 0;
   @Input() skullChecks = 0;
+  @Input() bossKey: boolean = true;
   @Input() era: Era = Era.NoRequirement;
   chest = CheckType.Chest;
   skulltula = CheckType.Skulltula;
   key = CheckType.Key;
+  heart: CheckType = CheckType.HeartPiece;
 
   private childSubscription!: Subscription;
   private adultSubscription!: Subscription;
   private childFilter!: boolean;
   private adultFilter!: boolean;
 
-  constructor(private _filterService: FilterService) { }
+  constructor(private _filterService: FilterService) {
+  }
 
   ngOnInit(): void {
     this.childSubscription = this._filterService.childChecked.subscribe(x => this.childFilter = x);
@@ -40,11 +43,11 @@ export class DungeonListComponent implements OnInit, OnDestroy {
   }
 
   outOfEraFilter() {
-      if (this.childFilter && !this.adultFilter && this.era === Era.Adult) {
-        return true;
-      } else if (!this.childFilter && this.adultFilter && this.era === Era.Child){
-        return true;
-      }
-      return false;
+    if (this.childFilter && !this.adultFilter && this.era === Era.Adult) {
+      return true;
+    } else if (!this.childFilter && this.adultFilter && this.era === Era.Child) {
+      return true;
+    }
+    return false;
   }
 }

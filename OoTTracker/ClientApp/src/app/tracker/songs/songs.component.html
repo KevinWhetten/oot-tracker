@@ -1,18 +1,18 @@
 ﻿<div class="songs">
     <div class="column1">
-        <img class="zeldas-lullaby" src="{{zeldasLullaby}}" alt="icon" (click)="toggleZeldasLullaby()"/>
-        <img class="eponas-song" src="{{eponasSong}}" alt="icon" (click)="toggleEponasSong()"/>
-        <img class="sarias-song" src="{{sariasSong}}" alt="icon" (click)="toggleSariasSong()"/>
-        <img class="suns-song" src="{{sunsSong}}" alt="icon" (click)="toggleSunsSong()"/>
-        <img class="song-of-time" src="{{songOfTime}}" alt="icon" (click)="toggleSongOfTime()"/>
-        <img class="song-of-storms" src="{{songOfStorms}}" alt="icon" (click)="toggleSongOfStorms()"/>
+      <app-item [source]="zeldasLullaby" [type]="song"></app-item>
+      <app-item [source]="eponasSong" [type]="song"></app-item>
+      <app-item [source]="sariasSong" [type]="song"></app-item>
+      <app-item [source]="sunsSong" [type]="song"></app-item>
+      <app-item [source]="songOfTime" [type]="song"></app-item>
+      <app-item [source]="songOfStorms" [type]="song"></app-item>
     </div>
     <div class="column2">
-        <img class="minuet-of-forest" src="{{minuetOfForest}}" alt="icon" (click)="toggleMinuetOfForest()"/>
-        <img class="bolero-of-fire" src="{{boleroOfFire}}" alt="icon" (click)="toggleBoleroOfFire()"/>
-        <img class="serenade-of-water" src="{{serenadeOfWater}}" alt="icon" (click)="toggleSerenadeOfWater()"/>
-        <img class="requiem-of-spirit" src="{{requiemOfSpirit}}" alt="icon" (click)="toggleRequiemOfSpirit()"/>
-        <img class="nocturne-of-shadow" src="{{nocturneOfShadow}}" alt="icon" (click)="toggleNocturneOfShadow()"/>
-        <img class="prelude-of-light" src="{{preludeOfLight}}" alt="icon" (click)="togglePreludeOfLight()"/>
+      <app-item [source]="minuetOfForest" [type]="song"></app-item>
+      <app-item [source]="boleroOfFire" [type]="song"></app-item>
+      <app-item [source]="serenadeOfWater" [type]="song"></app-item>
+      <app-item [source]="requiemOfSpirit" [type]="song"></app-item>
+      <app-item [source]="nocturneOfShadow" [type]="song"></app-item>
+      <app-item [source]="preludeOfLight" [type]="song"></app-item>
     </div>
 </div>

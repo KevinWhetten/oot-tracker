@@ -1,36 +1,36 @@
 <div class="items">
   <div class="medallion-row">
     <div class="medallion-column1">
-      <img class="shadow-medallion" src="{{shadowMedallion}}" alt="icon" (click)="toggleShadowMedallion()" (contextmenu)="toggleDungeon($event, 'shadow')"/>
+      <app-item [source]="shadowMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'shadow')"></app-item>
       <img class="shadow-dungeon dungeon" src="{{shadowDungeon}}" alt="dungeon">
-      <img class="spirit-medallion" src="{{spiritMedallion}}" alt="icon" (click)="toggleSpiritMedallion()" (contextmenu)="toggleDungeon($event,'spirit')"/>
+      <app-item [source]="spiritMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'spirit')"></app-item>
       <img class="spirit-dungeon dungeon" src="{{spiritDungeon}}" alt="dungeon">
     </div>
     <div class="medallion-column2">
-      <img class="light-medallion" src="{{lightMedallion}}" alt="icon" (click)="toggleLightMedallion()" (contextmenu)="toggleDungeon($event,'light')"/>
+      <app-item [source]="lightMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'light')"></app-item>
       <img class="light-dungeon dungeon" src="{{lightDungeon}}" alt="dungeon">
       <div class="blank"></div>
-      <img class="water-medallion" src="{{waterMedallion}}" alt="icon" (click)="toggleWaterMedallion()" (contextmenu)="toggleDungeon($event,'water')"/>
+      <app-item [source]="waterMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'water')"></app-item>
       <img class="water-dungeon dungeon" src="{{waterDungeon}}" alt="dungeon">
     </div>
     <div class="medallion-column1">
-      <img class="forest-medallion" src="{{forestMedallion}}" alt="icon" (click)="toggleForestMedallion()" (contextmenu)="toggleDungeon($event,'forest')"/>
+      <app-item [source]="forestMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'forest')"></app-item>
       <img class="forest-dungeon dungeon" src="{{forestDungeon}}" alt="dungeon">
-      <img class="fire-medallion" src="{{fireMedallion}}" alt="icon" (click)="toggleFireMedallion()" (contextmenu)="toggleDungeon($event,'fire')"/>
+      <app-item [source]="fireMedallion" [type]="medallion" (contextmenu)="toggleDungeon($event, 'fire')"></app-item>
       <img class="fire-dungeon dungeon" src="{{fireDungeon}}" alt="dungeon">
     </div>
   </div>
   <div class="medallion-row">
     <div class="medallion-column">
-      <img class="kokiri-emerald" src="{{kokiriEmerald}}" alt="icon" (click)="toggleKokiriEmerald()" (contextmenu)="toggleDungeon($event,'kokiri')"/>
+      <app-item [source]="kokiriEmerald" [type]="medallion" (contextmenu)="toggleDungeon($event, 'kokiri')"></app-item>
       <img class="kokiri-dungeon dungeon" src="{{kokiriDungeon}}" alt="dungeon">
     </div>
     <div class="medallion-column">
-      <img class="goron-ruby" src="{{goronRuby}}" alt="icon" (click)="toggleGoronRuby()" (contextmenu)="toggleDungeon($event,'goron')"/>
+      <app-item [source]="goronRuby" [type]="medallion" (contextmenu)="toggleDungeon($event, 'goron')"></app-item>
       <img class="goron-dungeon dungeon" src="{{goronDungeon}}" alt="dungeon">
     </div>
     <div class="medallion-column">
-      <img class="zora-sapphire" src="{{zoraSapphire}}" alt="icon" (click)="toggleZoraSapphire()" (contextmenu)="toggleDungeon($event,'zora')"/>
+      <app-item [source]="zoraSapphire" [type]="medallion" (contextmenu)="toggleDungeon($event, 'zora')"></app-item>
       <img class="zora-dungeon dungeon" src="{{zoraDungeon}}" alt="dungeon">
     </div>
   </div>

@@ -50,4 +50,8 @@ export class FilterService {
         break;
     }
   }
+
+  filter(){
+      this.available.next(this.available.value)
+  }
 }

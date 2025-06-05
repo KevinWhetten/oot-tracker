@@ -5,7 +5,8 @@
       <app-check [check]="check"></app-check>
     </div>
   </div>
-  <app-check-counter [num]="dungeonChecks" [type]="chest" [name]="'Chests'"></app-check-counter>
-  <app-check-counter *ngIf="keyChecks > 0" [num]="keyChecks" [type]="key" [name]="'Key Chests'"></app-check-counter>
+  <app-check-counter [num]="itemChecks" [type]="chest" [name]="'Items'"></app-check-counter>
+  <app-check-counter *ngIf="keyChecks > 0" [num]="keyChecks" [type]="key" [name]="'Keys'"></app-check-counter>
+  <app-check-counter *ngIf="bossKey" [num]="1" [type]="key" [name]="'Boss Key'"></app-check-counter>
   <app-check-counter *ngIf="skullChecks > 0" [num]="skullChecks" [type]="skulltula" [name]="'Skulltulas'"></app-check-counter>
 </div>

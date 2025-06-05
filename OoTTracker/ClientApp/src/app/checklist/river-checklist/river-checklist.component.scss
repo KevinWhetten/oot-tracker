@@ -18,7 +18,12 @@ h2 {
 
 .checklist {
   margin: .5rem 0 0 0;
-  width: 12rem;
+  width: 24rem;
+}
+
+.check-items {
+  display: flex;
+  flex-direction: row;
 }
 
 .forest-checklist {

@@ -17,7 +17,7 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Child,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Poe Collector',
@@ -38,7 +38,7 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.Game,
       era: Era.Child,
       time: TimeOfDay.Day,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Treasure Chest Game',
@@ -52,7 +52,7 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.NPC,
       era: Era.Child,
       time: TimeOfDay.Night,
-      requirements: {}
+      requirements: []
     },
   ] as Check[];
   templeChecks = [
@@ -61,28 +61,28 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Gossip Stone 2',
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Gossip Stone 3',
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Gossip Stone 4',
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Sheik',
@@ -105,14 +105,14 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.Skulltula,
       era: Era.Child,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Gossip Stone 1',
       type: CheckType.GossipStone,
       era: Era.Child,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Great Fairy',
@@ -126,7 +126,7 @@ export class CastleChecklistComponent implements OnInit {
       type: CheckType.GossipStone,
       era: Era.Child,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Storms Grotto',

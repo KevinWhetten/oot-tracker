@@ -33,6 +33,7 @@ import {CheckCounterComponent} from './checklist/dungeon-list/check-counter/chec
 import {TrialsListComponent} from './checklist/dungeon-list/trials-list/trials-list.component';
 import {ChecklistFilterComponent} from './checklist/checklist-filter/checklist-filter.component';
 import {LocationSelectionComponent} from "./notes/location-selection/location-selection.component";
+import { ItemComponent } from './tracker/item/item.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import {LocationSelectionComponent} from "./notes/location-selection/location-se
     TrialsListComponent,
     ChecklistFilterComponent,
     LocationSelectionComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

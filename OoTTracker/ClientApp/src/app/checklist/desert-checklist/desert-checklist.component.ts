@@ -24,7 +24,7 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.HeartPiece,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Bean Patch',
@@ -38,14 +38,14 @@ export class DesertChecklistComponent implements OnInit {
       type: CheckType.GossipStone,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Behind Waterfall',
       type: CheckType.HeartPiece,
       era: Era.NoRequirement,
       time: TimeOfDay.NoRequirement,
-      requirements: {}
+      requirements: []
     },
     {
       name: 'Behind Tent',

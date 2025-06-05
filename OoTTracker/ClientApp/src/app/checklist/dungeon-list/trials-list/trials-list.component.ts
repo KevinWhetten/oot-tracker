@@ -18,6 +18,7 @@ export class TrialsListComponent implements OnInit, OnDestroy {
   @Input() skullChecks = 0;
   era: Era = Era.Adult;
   chest = CheckType.Chest;
+  key: CheckType = CheckType.Key;
   dungeonSource = '<img src=\x22assets/icons/dungeon.png\x22 style\x22height: 16px;\x22/> ';
 
   private childSubscription!: Subscription;

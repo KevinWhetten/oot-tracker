@@ -63,7 +63,8 @@ export class CheckComponent implements OnInit, OnDestroy {
     return this.inTimeFilter()
       && this.inEraFilter()
       // && this.inLogicFilter()
-      && this.inCompletedFilter();
+      && this.inCompletedFilter()
+      && this.inLogicFilter();
   }
 
   inTimeFilter() {
@@ -89,18 +90,21 @@ export class CheckComponent implements OnInit, OnDestroy {
   }
 
   inLogicFilter() {
-    for (let itemList of this.check.requirements) {
-      let hasRequiredItem: boolean = false;
+    if(this.availableFilter) {
+      for (let itemList of this.check.requirements) {
+        let hasRequiredItem: boolean = false;
 
-      for (let itemNumber of itemList) {
-        if (this.currentInventory.filter(x => x === itemNumber).length > 0) {
-          hasRequiredItem = true;
-          break;
+        for (let itemNumber of itemList) {
+          if (this.currentInventory.filter(x => x === itemNumber).length > 0) {
+            hasRequiredItem = true;
+            break;
+          }
+        }
+        if (!hasRequiredItem) {
+          return false;
         }
       }
-      if (!hasRequiredItem) {
-        return false;
-      }
+      return true;
     }
     return true;
   }

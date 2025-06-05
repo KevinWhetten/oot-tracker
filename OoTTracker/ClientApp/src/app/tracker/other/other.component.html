@@ -1,9 +1,9 @@
 
-<div class="songs">
+<div class="other">
   <div class="column">
-    <img class="gerudo-card" src="{{gerudoCard}}" alt="icon" (click)="toggleGerudoCard()"/>
-    <img class="wallet" src="{{magic}}" alt="icon" (click)="toggleMagic()"/>
-    <img class="strength" src="{{strength}}" alt="icon" (click)="toggleStrength()"/>
-    <img class="scale" src="{{scale}}" alt="icon" (click)="toggleScale()"/>
+    <app-item [source]="wallet" [type]="other"></app-item>
+    <app-item [source]="magic" [type]="other"></app-item>
+    <app-item [source]="strength" [type]="other"></app-item>
+    <app-item [source]="scale" [type]="other"></app-item>
   </div>
 </div>
